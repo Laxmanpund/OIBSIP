@@ -1,7 +1,5 @@
 # Personal Portfolio Website
 
-A modern and responsive personal portfolio website developed as part of the **Oasis Infobyte Web Development and Designing Internship — Task 2**.
-
 ## 🚀 Features
 
 - Modern dark theme with green accent colors
@@ -19,16 +17,6 @@ A modern and responsive personal portfolio website developed as part of the **Oa
 - CSS3
 - JavaScript
 
-## 📂 Project Structure
-
-```text
-PersonalPortfolio/
-├── index.html
-├── style.css
-├── script.js
-└── README.md
-```
-
 ## 💻 Projects Showcased
 
 ### 1. Wanderlust
@@ -40,20 +28,6 @@ An agriculture guidance platform concept for crop information, disease guidance,
 ### 3. TerraNova
 A sustainability-themed landing page promoting eco-friendly living.
 
-**TerraNova Live Demo:** https://laxmanpund.github.io/OIBSIP/
-
-## ▶️ How to Run
-
-1. Download or clone the repository.
-2. Open the `PersonalPortfolio` folder in Visual Studio Code.
-3. Open `index.html` using the Live Server extension.
-
-## 🏢 Internship Details
-
-- **Organization:** Oasis Infobyte
-- **Domain:** Web Development and Designing
-- **Task:** Personal Portfolio Website
-- **Level:** Level 1
 
 ## 👨‍💻 Author
 
