@@ -1,7 +1,3 @@
-# OIBSIP – Oasis Infobyte Internship Projects
-
-This repository contains my projects completed during the **Oasis Infobyte Web Development and Designing Internship**.
-
 ## 🌱 Task 1: TerraNova – Landing Page
 
 **TerraNova – Explore a Greener Future** is a sustainability-themed landing page that promotes eco-friendly living and environmental awareness.
