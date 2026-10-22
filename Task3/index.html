@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A responsive temperature converter for Celsius, Fahrenheit and Kelvin.">
+  <title>Tempora | Temperature Converter</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <a href="#" class="logo"><span>°</span> Tempora</a>
+    <a href="#converter" class="nav-link">Temperature Converter ↗</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <span class="eyebrow"><span class="live-dot"></span> SIMPLE. FAST. ACCURATE.</span>
+        <h1>Every degree<br>makes a <span>difference.</span></h1>
+        <p>Convert temperatures between Celsius, Fahrenheit and Kelvin in seconds with our simple temperature converter.</p>
+        <a class="hero-link" href="#converter">Start converting <span>↓</span></a>
+      </div>
+
+      <div class="temperature-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="thermometer">
+          <div class="thermo-scale"></div>
+          <div class="thermo-bulb"></div>
+        </div>
+        <div class="float-card card-c">°C <small>Celsius</small></div>
+        <div class="float-card card-f">°F <small>Fahrenheit</small></div>
+        <div class="float-card card-k">K <small>Kelvin</small></div>
+      </div>
+    </section>
+
+    <section class="converter-section" id="converter">
+      <div class="section-heading">
+        <span class="eyebrow">THE CONVERTER</span>
+        <h2>Convert your temperature</h2>
+        <p>Enter a value, choose your units, and get your result instantly.</p>
+      </div>
+
+      <div class="converter-card">
+        <form id="converter-form">
+          <div class="fields">
+            <div class="field">
+              <label for="temperature">Temperature value</label>
+              <input
+                id="temperature"
+                type="number"
+                step="any"
+                placeholder="Enter temperature"
+                required
+              >
+            </div>
+
+            <div class="field">
+              <label for="from-unit">From</label>
+              <select id="from-unit">
+                <option value="C">Celsius (°C)</option>
+                <option value="F">Fahrenheit (°F)</option>
+                <option value="K">Kelvin (K)</option>
+              </select>
+            </div>
+
+            <button type="button" id="swap-btn" class="swap-btn" aria-label="Swap temperature units" title="Swap units">⇄</button>
+
+            <div class="field">
+              <label for="to-unit">To</label>
+              <select id="to-unit">
+                <option value="F">Fahrenheit (°F)</option>
+                <option value="C">Celsius (°C)</option>
+                <option value="K">Kelvin (K)</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="submit" class="convert-btn">Convert temperature <span>→</span></button>
+          <button type="button" id="clear-btn" class="clear-btn">Clear all</button>
+          <p id="error-message" class="error-message" role="alert"></p>
+        </form>
+
+        <div class="result-panel" aria-live="polite">
+          <span class="result-label">CONVERSION RESULT</span>
+          <p id="result-value" class="result-value">—</p>
+          <p id="result-description" class="result-description">Your converted temperature will appear here.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-section">
+      <div class="section-heading">
+        <span class="eyebrow">QUICK REFERENCE</span>
+        <h2>Three scales. One place.</h2>
+        <p>Understand the temperature scales you use every day.</p>
+      </div>
+
+      <div class="scale-grid">
+        <article class="scale-card celsius">
+          <span class="scale-symbol">°C</span>
+          <h3>Celsius</h3>
+          <p>Commonly used around the world for weather, cooking and everyday temperatures.</p>
+          <div class="scale-fact">Water freezes at <strong>0°C</strong></div>
+        </article>
+
+        <article class="scale-card fahrenheit">
+          <span class="scale-symbol">°F</span>
+          <h3>Fahrenheit</h3>
+          <p>Used primarily in the United States for weather reports and daily temperature readings.</p>
+          <div class="scale-fact">Water freezes at <strong>32°F</strong></div>
+        </article>
+
+        <article class="scale-card kelvin">
+          <span class="scale-symbol">K</span>
+          <h3>Kelvin</h3>
+          <p>The absolute temperature scale used in physics, chemistry and scientific research.</p>
+          <div class="scale-fact">Absolute zero is <strong>0 K</strong></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a href="#" class="logo"><span>°</span> Tempora</a>
+    <p>Built with HTML, CSS & JavaScript · Oasis Infobyte Internship — Task 3</p>
+    <a href="#converter">Back to converter ↑</a>
+  </footer>
+</body>
+</html>
