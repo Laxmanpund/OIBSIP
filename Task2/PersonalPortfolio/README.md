@@ -40,7 +40,6 @@ An agriculture guidance platform concept for crop information, disease guidance,
 ### 3. TerraNova
 A sustainability-themed landing page promoting eco-friendly living.
 
-**TerraNova Live Demo:** https://laxmanpund.github.io/OIBSIP/
 
 ## ▶️ How to Run
 
