@@ -16,10 +16,6 @@
 - Google Fonts
 - Responsive Web Design
 
-### 📂 Project Files
-- `index.html` – Website structure
-- `style.css` – Styling and responsive layout
-
 ### 🚀 How to Run
 1. Download or clone this repository.
 2. Open `index.html` in your browser.
@@ -28,4 +24,3 @@
 - **Organization:** Oasis Infobyte
 - **Domain:** Web Development and Designing
 - **Repository:** OIBSIP
-

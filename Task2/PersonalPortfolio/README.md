@@ -19,16 +19,6 @@ A modern and responsive personal portfolio website developed as part of the **Oa
 - CSS3
 - JavaScript
 
-## 📂 Project Structure
-
-```text
-PersonalPortfolio/
-├── index.html
-├── style.css
-├── script.js
-└── README.md
-```
-
 ## 💻 Projects Showcased
 
 ### 1. Wanderlust
@@ -59,7 +49,3 @@ A sustainability-themed landing page promoting eco-friendly living.
 **Laxman Pund**
 
 GitHub: https://github.com/Laxmanpund
-
----
-
-Made with ❤️ using HTML, CSS, and JavaScript.
