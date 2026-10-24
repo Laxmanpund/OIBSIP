@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TaskFlow | To-Do App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="app-container">
+        <header class="app-header">
+            <div>
+                <p class="eyebrow">YOUR DAILY PRODUCTIVITY</p>
+                <h1>Task<span>Flow.</span></h1>
+                <p class="subtitle">Small steps. Big achievements.</p>
+            </div>
+
+            <div class="date-badge" id="currentDate"></div>
+        </header>
+
+        <section class="add-task-section">
+            <form id="taskForm">
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="What needs to be done?"
+                    maxlength="200"
+                    autocomplete="off"
+                    aria-label="New task"
+                    required
+                >
+
+                <button type="submit" class="add-button">
+                    <span>+</span> Add Task
+                </button>
+            </form>
+
+            <p id="formMessage" class="form-message" aria-live="polite"></p>
+        </section>
+
+        <section class="task-section">
+            <div class="section-heading">
+                <div>
+                    <span class="status-dot pending-dot"></span>
+                    <h2>Pending Tasks</h2>
+                </div>
+
+                <span class="task-count" id="pendingCount">0 pending</span>
+            </div>
+
+            <ul id="pendingList" class="task-list"></ul>
+
+            <p id="pendingEmpty" class="empty-state">
+                🎯 You're all caught up! Add a task to get started.
+            </p>
+        </section>
+
+        <section class="task-section completed-section">
+            <div class="section-heading">
+                <div>
+                    <span class="status-dot completed-dot"></span>
+                    <h2>Completed Tasks</h2>
+                </div>
+
+                <span class="task-count" id="completedCount">0 completed</span>
+            </div>
+
+            <ul id="completedList" class="task-list"></ul>
+
+            <p id="completedEmpty" class="empty-state">
+                ✨ Completed tasks will appear here.
+            </p>
+        </section>
+
+        <footer>
+            <p>Stay focused. Keep moving forward. ✨</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
