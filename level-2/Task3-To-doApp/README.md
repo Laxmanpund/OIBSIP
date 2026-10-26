@@ -18,7 +18,7 @@ A responsive, interactive To-Do List application built using HTML5, CSS3, and Va
 
 ## 🛠️ Technologies Used
 
-- HTML5
+- HTML
 - CSS3
 - Vanilla JavaScript
 - Browser localStorage API
@@ -26,7 +26,7 @@ A responsive, interactive To-Do List application built using HTML5, CSS3, and Va
 ## ▶️ How to Run
 
 1. Clone or download the OIBSIP repository.
-2. Open the `Task5/TodoApp` folder in Visual Studio Code.
+2. Open the `Task3/TodoApp` folder in Visual Studio Code.
 3. Open `index.html` using Live Server or a web browser.
 4. Add a task and try editing, completing, and deleting it.
 5. Refresh the page to verify that saved tasks persist.
@@ -37,8 +37,7 @@ Tasks are stored in the browser's `localStorage`. They remain available after re
 
 ## 🎯 Internship Task
 
-- **Organization:** Oasis Infobyte (OIBSIP)
-- **Level:** Level 2
-- **Task:** To-Do Web App
-
+**Organization:** Oasis Infobyte (OIBSIP)
+**Level:** Level 2
+**Task:** To-Do Web App
 **Objective:** Build an interactive task manager with add, edit, delete, completion, timestamps, and persistent storage functionality.

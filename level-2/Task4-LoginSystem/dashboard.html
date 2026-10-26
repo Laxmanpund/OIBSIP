@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | SecureSpace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="dashboard-container">
+        <header class="dashboard-header">
+            <a class="brand" href="dashboard.html">Secure<span>Space.</span></a>
+            <button type="button" id="logoutButton" class="logout-button">
+                Log Out ↗
+            </button>
+        </header>
+
+        <section class="welcome-card">
+            <p class="eyebrow">YOUR PERSONAL WORKSPACE</p>
+            <h1>Welcome back, <span id="dashboardUsername">User</span>! 👋</h1>
+            <p class="subtitle">
+                You have successfully signed in. This is your protected dashboard.
+            </p>
+        </section>
+
+        <section class="account-card">
+            <div class="account-icon">👤</div>
+            <div>
+                <p class="eyebrow">ACCOUNT DETAILS</p>
+                <h2 id="accountUsername">Username</h2>
+                <p id="accountEmail" class="subtitle">email@example.com</p>
+            </div>
+            <span class="account-status">● Signed in</span>
+        </section>
+
+        <footer class="dashboard-footer">
+            <p>SecureSpace · Your workspace, your progress.</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

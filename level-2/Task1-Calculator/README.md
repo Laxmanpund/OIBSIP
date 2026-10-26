@@ -19,7 +19,7 @@ A modern, responsive, browser-based calculator built using HTML5, CSS3, and Vani
 
 ## 🛠️ Technologies Used
 
-- HTML5
+- HTML
 - CSS3
 - Vanilla JavaScript
 
@@ -44,9 +44,6 @@ A modern, responsive, browser-based calculator built using HTML5, CSS3, and Vani
 ## 🎯 Internship Task
 
 **Organization:** Oasis Infobyte (OIBSIP)
-
 **Level:** Level 2
-
 **Task:** Calculator
-
 **Objective:** Build a fully functional browser-based calculator with a user-friendly button interface.

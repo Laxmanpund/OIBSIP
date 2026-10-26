@@ -14,7 +14,7 @@ A responsive tribute webpage dedicated to Dr. APJ Abdul Kalam, India's former Pr
 
 ## Technologies Used
 
-- HTML5
+- HTML
 - CSS3
 - Vanilla JavaScript
 
@@ -31,9 +31,7 @@ Dr. Avul Pakir Jainulabdeen Abdul Kalam (1931–2015) was an aerospace scientist
 ## Internship
 
 **Organization:** Oasis Infobyte (OIBSIP)
-
 **Level:** Level 2
-
 **Task:** Tribute Page
 
 Created as part of the Web Development Internship.

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account | SecureSpace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="auth-container">
+        <section class="auth-card">
+            <a class="brand" href="index.html">Secure<span>Space.</span></a>
+
+            <p class="eyebrow">GET STARTED</p>
+            <h1>Create your account</h1>
+            <p class="subtitle">Join us and manage your workspace.</p>
+
+            <form id="registerForm">
+                <label for="registerUsername">Username</label>
+                <input
+                    id="registerUsername"
+                    name="username"
+                    type="text"
+                    placeholder="Choose a username"
+                    minlength="3"
+                    maxlength="30"
+                    autocomplete="username"
+                    required
+                >
+
+                <label for="registerEmail">Email address</label>
+                <input
+                    id="registerEmail"
+                    name="email"
+                    type="email"
+                    placeholder="you@example.com"
+                    autocomplete="email"
+                    required
+                >
+
+                <label for="registerPassword">Password</label>
+                <input
+                    id="registerPassword"
+                    name="password"
+                    type="password"
+                    placeholder="At least 8 characters"
+                    minlength="8"
+                    autocomplete="new-password"
+                    required
+                >
+
+                <p class="hint">Use at least 8 characters and include one number.</p>
+
+                <p id="registerMessage" class="message" aria-live="polite"></p>
+
+                <button type="submit" class="primary-button">Create Account</button>
+            </form>
+
+            <p class="switch-page">
+                Already have an account?
+                <a href="index.html">Sign in</a>
+            </p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
