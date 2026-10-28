@@ -1,0 +1,245 @@
+.tracking-section {
+  width: min(900px, 92%);
+  margin: 50px auto;
+  padding: 28px 0;
+  color: #242424;
+}
+
+.tracking-heading {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.tracking-eyebrow {
+  color: #e85d04;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.tracking-heading h2 {
+  margin: 8px 0;
+  font-size: clamp(28px, 4vw, 38px);
+}
+
+.tracking-heading p {
+  color: #777;
+}
+
+.tracking-form {
+  display: flex;
+  gap: 12px;
+  max-width: 650px;
+  margin: 0 auto 24px;
+}
+
+.tracking-form input {
+  flex: 1;
+  min-width: 0;
+  padding: 14px 16px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.tracking-form button {
+  border: none;
+  border-radius: 10px;
+  background: #e85d04;
+  color: white;
+  padding: 14px 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.tracking-form button:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+
+.tracking-error {
+  color: #b42318;
+  text-align: center;
+  margin: 16px 0;
+}
+
+.tracking-card {
+  padding: 24px;
+  border: 1px solid #eee;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 8px 28px rgb(0 0 0 / 6%);
+}
+
+.tracking-card-header,
+.tracking-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.tracking-card-header h3 {
+  margin: 7px 0 0;
+  overflow-wrap: anywhere;
+}
+
+.tracking-muted {
+  display: block;
+  color: #888;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+
+.tracking-status {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 20px;
+  background: #fff0e5;
+  color: #c64a00;
+  font-size: 12px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.status-cancelled {
+  background: #fee4e2;
+  color: #b42318;
+}
+
+.tracking-summary {
+  margin: 24px 0;
+  padding: 18px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.tracking-summary strong {
+  display: block;
+  margin-top: 8px;
+  font-size: 19px;
+}
+
+.payment-paid {
+  color: #16803c;
+}
+
+.payment-pending {
+  color: #a15c00;
+}
+
+.tracking-timeline {
+  margin: 28px 0;
+}
+
+.timeline-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  position: relative;
+  min-height: 76px;
+  color: #999;
+}
+
+.timeline-step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 17px;
+  top: 36px;
+  width: 2px;
+  height: 40px;
+  background: #ddd;
+}
+
+.timeline-step.completed:not(:last-child)::after {
+  background: #279653;
+}
+
+.timeline-marker {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  background: #fff;
+  font-weight: 800;
+}
+
+.timeline-step.completed {
+  color: #242424;
+}
+
+.timeline-step.completed .timeline-marker {
+  border-color: #279653;
+  background: #279653;
+  color: white;
+}
+
+.timeline-step.active .timeline-copy strong {
+  color: #e85d04;
+}
+
+.timeline-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 2px;
+}
+
+.timeline-copy span {
+  color: #777;
+  font-size: 13px;
+}
+
+.tracking-items {
+  margin-top: 25px;
+}
+
+.tracking-items h4 {
+  margin-bottom: 12px;
+}
+
+.tracking-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.tracking-updated {
+  margin-top: 20px;
+  color: #888;
+  font-size: 12px;
+  text-align: center;
+}
+
+@media (max-width: 560px) {
+  .tracking-form {
+    flex-direction: column;
+  }
+
+  .tracking-form button {
+    width: 100%;
+  }
+
+  .tracking-card {
+    padding: 18px;
+  }
+
+  .tracking-card-header,
+  .tracking-summary {
+    align-items: flex-start;
+  }
+
+  .tracking-card-header {
+    flex-direction: column;
+  }
+
+  .tracking-summary {
+    flex-wrap: wrap;
+  }
+}
