@@ -236,3 +236,111 @@ body {
     padding: 18px;
   }
 }
+
+
+.tracking-section {
+  max-width: 850px;
+  margin: 35px auto;
+  padding: 25px;
+  background: #fff;
+  border: 1px solid #f0e3d9;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.tracking-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tracking-form input {
+  flex: 1;
+  min-width: 200px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.tracking-form button,
+.tracking-refresh {
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 8px;
+  color: white;
+  background: #c51f1a;
+  cursor: pointer;
+}
+
+.tracking-form button:disabled,
+.tracking-refresh:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.tracking-steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin: 25px 0;
+}
+
+.tracking-step {
+  color: #888;
+}
+
+.tracking-step span {
+  display: inline-grid;
+  place-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #eee;
+}
+
+.tracking-step.completed {
+  color: #187944;
+}
+
+.tracking-step.completed span {
+  color: white;
+  background: #198754;
+}
+
+.tracking-step p {
+  font-size: 13px;
+}
+
+.tracking-result {
+  margin-top: 25px;
+}
+
+@media (max-width: 600px) {
+  .tracking-section {
+    margin: 20px 12px;
+    padding: 18px;
+  }
+
+  .tracking-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+.payment-section {
+  margin: 24px 0;
+  padding: 20px;
+  border: 1px solid #f0e3d9;
+  border-radius: 12px;
+  background: #fffaf5;
+}
+
+.payment-section h3 {
+  margin-top: 0;
+}
+
+.payment-message {
+  margin: 12px 0;
+  overflow-wrap: anywhere;
+}

@@ -1,0 +1,449 @@
+.admin-dashboard {
+  min-height: 100vh;
+  padding: 28px;
+  background: #fffaf5;
+  color: #252525;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.admin-dashboard * {
+  box-sizing: border-box;
+}
+
+.admin-header {
+  max-width: 1600px;
+  margin: 0 auto 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.admin-brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.admin-logo {
+  font-size: 48px;
+}
+
+.admin-eyebrow {
+  color: #e84920;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.admin-brand h1 {
+  margin: 5px 0 2px;
+  font-size: clamp(27px, 3vw, 38px);
+}
+
+.admin-brand p {
+  margin: 0;
+  color: #777;
+}
+
+.admin-back-btn,
+.admin-refresh-btn,
+.admin-clear-btn {
+  padding: 12px 17px;
+  border: 0;
+  border-radius: 9px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.admin-back-btn,
+.admin-refresh-btn {
+  color: #fff;
+  background: #e84920;
+}
+
+.admin-back-btn:hover,
+.admin-refresh-btn:hover {
+  background: #c93615;
+}
+
+.admin-refresh-btn:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.admin-stats {
+  max-width: 1600px;
+  margin: 0 auto 28px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.admin-stat-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-width: 0;
+  padding: 24px;
+  background: #fff;
+  border: 1px solid #f0e3d9;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px #58300b08;
+}
+
+.stat-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 13px;
+  background: #fff0e7;
+  font-size: 24px;
+}
+
+.admin-stat-card p {
+  margin: 0 0 8px;
+  color: #777;
+  font-size: 13px;
+}
+
+.admin-stat-card h2 {
+  margin: 0;
+  font-size: clamp(20px, 2vw, 28px);
+  overflow-wrap: anywhere;
+}
+
+.admin-orders {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 26px;
+  background: #fff;
+  border: 1px solid #f0e3d9;
+  border-radius: 18px;
+  box-shadow: 0 5px 24px #58300b08;
+}
+
+.admin-orders-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.admin-orders-heading h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.admin-orders-heading p {
+  margin: 7px 0 0;
+  color: #888;
+  font-size: 14px;
+}
+
+.admin-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.admin-filters input,
+.admin-filters select {
+  min-height: 44px;
+  padding: 11px 14px;
+  border: 1px solid #e7dcd3;
+  border-radius: 9px;
+  background: #fff;
+  font-size: 14px;
+  outline: none;
+}
+
+.admin-filters input {
+  flex: 1;
+  min-width: 220px;
+}
+
+.admin-filters select {
+  min-width: 190px;
+}
+
+.admin-filters input:focus,
+.admin-filters select:focus,
+.admin-status-select:focus {
+  border-color: #e84920;
+  box-shadow: 0 0 0 3px #e8492015;
+}
+
+.admin-clear-btn {
+  color: #554b44;
+  background: #f3eee9;
+}
+
+.admin-results {
+  margin: 12px 0;
+  color: #888;
+  font-size: 13px;
+}
+
+.admin-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.admin-table thead {
+  background: #fff6ee;
+}
+
+.admin-table th {
+  padding: 16px 13px;
+  color: #51473f;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.admin-table td {
+  padding: 17px 13px;
+  border-bottom: 1px solid #f0e8e1;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.admin-table tbody tr:hover {
+  background: #fffdfb;
+}
+
+.admin-order-id {
+  color: #d94120;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.admin-subtext {
+  display: block;
+  margin-top: 6px;
+  color: #777;
+  font-size: 12px;
+}
+
+.admin-address {
+  min-width: 170px;
+  max-width: 240px;
+  overflow-wrap: anywhere;
+}
+
+.admin-items {
+  min-width: 170px;
+  line-height: 1.8;
+}
+
+.admin-total {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.admin-status {
+  display: inline-block;
+  padding: 7px 10px;
+  border-radius: 20px;
+  background: #fff0d6;
+  color: #875500;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.status-in-kitchen {
+  background: #e7eaff;
+  color: #3947a5;
+}
+
+.status-sent-to-delivery {
+  background: #dff3ff;
+  color: #075985;
+}
+
+.status-delivered {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status-cancelled {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.admin-status-select {
+  width: 180px;
+  max-width: 100%;
+  padding: 10px;
+  border: 1px solid #e6d9cf;
+  border-radius: 9px;
+  background: #fff;
+  font-size: 13px;
+  outline: none;
+}
+
+.admin-status-select:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.admin-updating {
+  display: block;
+  margin-top: 6px;
+  color: #777;
+}
+
+.admin-error {
+  max-width: 1600px;
+  margin: 0 auto 20px;
+  padding: 15px 18px;
+  border: 1px solid #fecaca;
+  border-radius: 10px;
+  background: #fee2e2;
+  color: #991b1b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.admin-error button {
+  padding: 8px 12px;
+  border: 0;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.admin-empty {
+  padding: 42px 15px;
+  color: #777;
+  text-align: center;
+}
+
+.admin-footer {
+  max-width: 1600px;
+  margin: 25px auto 0;
+  color: #999;
+  text-align: center;
+  font-size: 12px;
+}
+
+@media (max-width: 1150px) {
+  .admin-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .admin-dashboard {
+    padding: 15px;
+  }
+
+  .admin-header {
+    align-items: flex-start;
+  }
+
+  .admin-brand {
+    gap: 9px;
+  }
+
+  .admin-logo {
+    font-size: 32px;
+  }
+
+  .admin-brand h1 {
+    font-size: 23px;
+  }
+
+  .admin-brand p {
+    font-size: 12px;
+  }
+
+  .admin-back-btn {
+    padding: 10px 12px;
+  }
+
+  .admin-stats {
+    gap: 10px;
+  }
+
+  .admin-stat-card {
+    padding: 14px 10px;
+    gap: 9px;
+  }
+
+  .stat-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+
+  .admin-stat-card p {
+    font-size: 11px;
+  }
+
+  .admin-stat-card h2 {
+    font-size: 19px;
+  }
+
+  .admin-orders {
+    padding: 16px 12px;
+  }
+
+  .admin-orders-heading {
+    align-items: flex-start;
+  }
+
+  .admin-orders-heading h2 {
+    font-size: 20px;
+  }
+
+  .admin-orders-heading p {
+    font-size: 12px;
+  }
+
+  .admin-filters {
+    flex-direction: column;
+  }
+
+  .admin-filters input,
+  .admin-filters select,
+  .admin-clear-btn {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .admin-table {
+    min-width: 1100px;
+  }
+}
+
+@media (max-width: 400px) {
+  .admin-dashboard {
+    padding: 10px;
+  }
+
+  .admin-brand h1 {
+    font-size: 19px;
+  }
+
+  .admin-stats {
+    gap: 8px;
+  }
+
+  .admin-stat-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
