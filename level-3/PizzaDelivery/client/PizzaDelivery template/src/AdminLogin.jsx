@@ -40,7 +40,7 @@ export default function AdminLogin({ onLogin, onBack }) {
   return (
     <main style={styles.page}>
       <form onSubmit={handleSubmit} style={styles.card}>
-        <h1>🔐 Admin Login</h1>
+        <h1>🔐 Admin<br></br><br></br>  Login</h1>
         <p>Pizza Paradise Management</p>
 
         <label style={styles.label}>

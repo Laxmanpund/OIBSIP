@@ -55,7 +55,7 @@ const orderSchema = new mongoose.Schema(
       enum: [
         "Order Received",
         "In Kitchen",
-        "Sent to Delivery",
+        "Out for Delivery",
         "Delivered",
         "Cancelled",
       ],
@@ -67,6 +67,34 @@ const orderSchema = new mongoose.Schema(
       enum: ["Pending", "Paid", "Failed"],
       default: "Pending",
     },
+
+    // Inventory reservation status
+    inventoryStatus: {
+      type: String,
+      enum: [
+        "Not Reserved",
+        "Reserved",
+        "Deducted",
+        "Released",
+      ],
+      default: "Not Reserved",
+    },
+
+    // Store reserved ingredients for this order
+    inventoryMovements: [
+      {
+        item: {
+          type: mongoose.Schema.Types.ObjectId,
+          ref: "Inventory",
+          required: true,
+        },
+        quantity: {
+          type: Number,
+          required: true,
+          min: 0.01,
+        },
+      },
+    ],
 
     razorpayOrderId: {
       type: String,
